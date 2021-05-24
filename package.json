@@ -1,0 +1,55 @@
+{
+	"name": "Mod-Bot",
+	"version": "1.0.0",
+	"main": "shard.js",
+	"description": "Mod bot for ir",
+	"author": "8FA",
+	"scripts": {
+		"start": "node shard.js",
+		"test": "echo \"Error: no test specified\" && exit 0",
+		"lint": "eslint . --fix && exit 0",
+		"code-format": "npx prettier --write . && exit 0"
+	},
+	"email": "Liam@uilliam.com",
+	"url": "https://8FA.dev",
+	"engines": {
+		"node": ">=14.0.0"
+	},
+	"repository": {
+		"url": "git+https://github.com/8FAX/IrMod.git"
+	},
+	"bugs": {
+		"url": "https://github.com/8FAX/IrMod."
+	},
+	"homepage": "N/A",
+	"keywords": [],
+	"license": "N/A",
+	"dependencies": {
+		"@discordjs/opus": "^0.4.0",
+		"blapi": "^2.0.1",
+		"canvacord": "^5.1.0",
+		"cryptr": "^6.0.2",
+		"discord-giveaways": "^4.4.3",
+		"discord.js": "^12.5.1",
+		"distube": "^2.8.11",
+		"dotenv": "^8.2.0",
+		"enmap": "^5.8.4",
+		"express": "^4.17.1",
+		"ffmpeg-static": "^4.2.8",
+		"fs": "^0.0.1-security",
+		"fs-extra": "^9.1.0",
+		"moment": "^2.29.1",
+		"ms": "^2.1.3",
+		"node-fetch": "^2.6.1",
+		"opusscript": "^0.0.8",
+		"os": "^0.1.1",
+		"quick.db": "^7.1.3",
+		"request": "^2.88.2",
+		"superagent": "^6.1.0",
+		"topgg-autoposter": "^1.1.9",
+		"twemoji-parser": "^13.0.0",
+		"urban": "^0.3.2",
+		"weather-js": "^2.0.0",
+		"ytdl-core": "^4.5.0"
+	}
+}
