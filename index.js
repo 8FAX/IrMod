@@ -77,7 +77,7 @@ const GiveawayManagerWithOwnDatabase = class extends GiveawaysManager {
 		return true;
 	}
 };
-
+const roleName = 'Verified';
 const manager = new GiveawayManagerWithOwnDatabase(client, {
 	storage: false,
 	updateCountdownEvery: 10000,
@@ -85,10 +85,11 @@ const manager = new GiveawayManagerWithOwnDatabase(client, {
 	hasGuildMembersIntent: false,
 	default: {
 		botsCanWin: false,
-		exemptPermissions: ["MANAGE_MESSAGES", "ADMINISTRATOR"],
+		exemptPermissions: ["MANAGE_MESSAGES", "ADMINISTRATOR" ],
 		embedColor: "#ff6969",
 		embedColorEnd: "#505050",
 		reaction: "🎉",
+		exemptMembers: new Function('member', `return !member.roles.cache.some((r) => r.name === \'${roleName}\')`),
 	},
 });
 client.giveawaysManager = manager;

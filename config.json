@@ -2,7 +2,7 @@
 	"prefix": "-",
 	"ownerID": "223433394023956480",
 	"everyoneMention": false,
-	"hostedBy": true,
+	"hostedBy": false,
 	"emoji": {
 		"play": "▶️",
 		"stop": "⏹️",
