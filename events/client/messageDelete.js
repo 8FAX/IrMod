@@ -16,7 +16,7 @@ module.exports = async (client, message, member ) => {
 		const embed = new Discord.MessageEmbed()
 			.setColor('RED')
 			.setAuthor('GHOST PING')
-			.setDescription(`Well well well, **${message.author}** decided to ghost-ping a user..`)
+			.setDescription(`Well well well, **${message.author}** decided to ghost-ping a user...`)
 			.addField('User', `${message.author}`)
 			.addField('channel', `${message.channel}`)
 			.addField('Their Message', `${Util.escapeMarkdown(message.content)}`)
